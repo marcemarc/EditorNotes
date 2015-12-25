@@ -1,0 +1,41 @@
+﻿{
+    propertyEditors: [
+     {
+        alias: "tooorangey.EditorNotes",
+        name: "Editor Notes",
+        valueType: "JSON",
+        editor: {	                                        
+        view: "~/App_Plugins/tooorangey.EditorNotes/EditorNotes.html"
+        },
+        prevalues: {
+            fields: [
+			{
+                    label: "Note CssClass",
+                    description: 'A CssClass for the div that wraps the note, eg alert alert-info or alert alert-warning',
+                    key: "notecssclass",
+                    view: "TextString"
+                },
+                {
+                    label: "Editor Notes",
+                    description: 'Notes to provide the editor on the doctype',
+                    key: "editornotes",
+                    view: "~/App_Plugins/tooorangey.EditorNotes/RichTextPreValueEditor.html"
+                },
+                {
+                    label: "Hide Label",
+                    description: 'Hides the property label/description when selected',
+                    key: "hideLabel",
+                    view: "boolean"
+                }
+            ]
+        }
+        }
+    
+    ],
+    parameterEditors:[],
+   javascript: [
+   '~/App_Plugins/tooorangey.EditorNotes/EditorNotes.controller.js',
+   '~/App_Plugins/tooorangey.EditorNotes/RichTextPreValueEditor.controller.js'
+   ],
+    css: []
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>tooorangey.uEditorNotes</id>
+	<title>Editor Notes Property for Umbraco</title>
+    <version>1.0.1</version>
+    <authors>marcemarc</authors>
+    <owners>marcemarc</owners>
+    <projectUrl>https://our.umbraco.org/projects/backoffice-extensions/ueditornotes/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A read only property to provide notes to editors within the context of a document type to explain and remind how things work, at the point of content entry</description>
+    <releaseNotes>Intitial release</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Umbraco</tags>
+    <dependencies></dependencies>
+  </metadata>
+</package>
