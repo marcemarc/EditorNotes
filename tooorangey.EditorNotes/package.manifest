@@ -10,20 +10,20 @@
         prevalues: {
             fields: [
 			{
-                    label: "Note CssClass",
-                    description: 'A CssClass for the div that wraps the note, eg alert alert-info or alert alert-warning',
+                    label: "Note CSS class",
+                    description: "A CSS class for the &lt;div&gt; that wraps the note, e.g. 'alert alert-info' or 'alert alert-warning'",
                     key: "notecssclass",
                     view: "TextString"
                 },
                 {
                     label: "Editor Notes",
-                    description: 'Notes to provide the editor on the doctype',
+                    description: 'Notes to provide to the editor on the doctype',
                     key: "editornotes",
                     view: "~/App_Plugins/tooorangey.EditorNotes/RichTextPreValueEditor.html"
                 },
                 {
                     label: "Hide Label",
-                    description: 'Hides the property label/description when selected',
+                    description: 'Hides the property label &amp; description when selected',
                     key: "hideLabel",
                     view: "boolean"
                 }
