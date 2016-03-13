@@ -1,3 +1,13 @@
-﻿<div ng-controller="tooorangey.EditorNotes" class="umb-editor umb-rte">
-    <div ng-class="noteCssClass"><div ng-bind-html-unsafe="editorNotes"></div></div>
+﻿<div ng-controller="tooorangey.EditorNotes" class="umb-editor umb-rte" ng-class="noteCssClass">
+    <div ng-show="noteRenderMode=='SlidingPane'" class="umb-panel-header-name">
+        <a ng-click="openDialog()">{{panelTitle}} <i class="icon-help-alt"></i></a>
+    </div>
+    <div ng-show="noteRenderMode=='Collapsible'" class="umb-panel-header-name">
+        <a ng-click="togglePanelCollapse()">{{panelTitle}}  <i ng-show="isCollapsed" class="icon icon-chevron-down pull-right"></i> <i ng-show="!isCollapsed" class="icon icon-chevron-up  pull-right"></i></a>
+    </div>
+    <div ng-show="(noteRenderMode=='Collapsible' || noteRenderMode=='Html') && !isCollapsed" class="panel-body">
+
+        <div ng-bind-html-unsafe="editorNotes"></div>
+    </div>
+
 </div>
