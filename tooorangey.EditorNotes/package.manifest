@@ -51,5 +51,5 @@
    '~/App_Plugins/tooorangey.EditorNotes/RichTextPreValueEditor.controller.js',
    '~/App_Plugins/tooorangey.EditorNotes/NotesModePreValueEditor.controller.js'
    ],
-    css: []
+    css: ['~/App_Plugins/tooorangey.EditorNotes/EditorNotes.css']
 }
