@@ -1,0 +1,28 @@
+﻿<div class="umb-panel tooorangey-editornote-dialog" ng-controller="tooorangey.EditorNotes.Dialog">
+    <div class="umb-panel-header">
+        <h2>{{dialogData.panelTitle}}</h2>
+        <p>{{panelTitle}}</p>
+    </div>
+
+    <div class="umb-panel-body with-footer">
+        <div ng-class="dialogData.noteCssClass">
+            <div ng-bind-html-unsafe="dialogData.editorNotes"></div>
+        </div>
+    </div>
+
+    <div class="umb-panel-footer">
+        <div class="umb-el-wrap umb-panel-buttons">
+            <div class="btn-toolbar umb-btn-toolbar pull-right">
+                <a href ng-click="close()" class="btn btn-link">
+                    <localize key="general_cancel">Cancel</localize>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
