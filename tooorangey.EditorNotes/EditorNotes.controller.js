@@ -16,12 +16,12 @@ angular.module("umbraco").controller("tooorangey.EditorNotes",function ($scope, 
     if (typeof $scope.model.config.noteCssClass != "undefined") {
       $scope.noteCssClass = $scope.model.config.noteCssClass;
     }
-    if (typeof $scope.model.config.noteRenderMode != "undefined") {
+    if (typeof $scope.model.config.noteRenderMode != "undefined" && $scope.model.config.noteRenderMode != "") {
         
         $scope.noteRenderMode = $scope.model.config.noteRenderMode;
         
     }
-    if (typeof $scope.model.config.panelTitle != "undefined") {
+    if (typeof $scope.model.config.panelTitle != "undefined" && $scope.model.config.panelTitle != "") {
         $scope.panelTitle = $scope.model.config.panelTitle;
     }
     $scope.togglePanelCollapse = function () {
