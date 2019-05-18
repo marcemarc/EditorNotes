@@ -1,0 +1,55 @@
+﻿﻿{
+    propertyEditors: [
+     {
+        alias: "tooorangey.EditorNotes.v8",
+        name: "Editor Notes V8",
+        valueType: "JSON",
+        editor: {	                                        
+        view: "~/App_Plugins/tooorangey.EditorNotes.v8/EditorNotes.html"
+        },
+        prevalues: {
+            fields: [
+				{				
+                    label: "Panel Title",
+                    description: 'If the note is a collapsible panel then set the text to show when the panel is collapsed',
+                    key: "panelTitle",
+                    view: "TextString"
+                },
+				{
+                    label: "Note CSS class",
+                    description: "A CSS class for the &lt;div&gt; that wraps the note, e.g. 'alert alert-info' or 'alert alert-warning'",
+                    key: "noteCssClass",
+                    view: "TextString"
+                },
+                {
+                    label: "Editor Notes",
+                    description: 'Notes to provide to the editor on the doctype',
+                    key: "editorNotes",
+                    view: "~/App_Plugins/tooorangey.EditorNotes.v8/RichTextPreValueEditor.html"
+                },
+                {
+                    label: "Hide Label",
+                    description: 'Hides the property label &amp; description when selected',
+                    key: "hideLabel",
+                    view: "boolean"
+                },
+                {
+                    label: "Note Render Mode",
+                    description: 'How to render the Note, Just as Html, Collapsible Panel or in a Sliding out Panel',
+                    key: "noteRenderMode",
+                    view: "~/App_Plugins/tooorangey.EditorNotes.v8/NotesModePreValueEditor.html"
+                }
+            ]
+        }
+        }
+    
+    ],
+    parameterEditors:[],
+   javascript: [
+   '~/App_Plugins/tooorangey.EditorNotes.v8/EditorNotes.controller.js',
+   '~/App_Plugins/tooorangey.EditorNotes.v8/EditorNotesDialog.controller.js',
+   '~/App_Plugins/tooorangey.EditorNotes.v8/RichTextPreValueEditor.controller.js',
+   '~/App_Plugins/tooorangey.EditorNotes.v8/NotesModePreValueEditor.controller.js'
+   ],
+    css: ['~/App_Plugins/tooorangey.EditorNotes.v8/EditorNotes.css']
+}
